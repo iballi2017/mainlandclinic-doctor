@@ -1,0 +1,21 @@
+@use "./_partials";
+@use "./_utilities";
+@use "./_components";
+@use "./_abstract";
+@use "./_pages";
+
+
+/* Default state */
+input {
+  border-bottom: 1px solid #b0bec5; /* Default border color */
+}
+
+/* Focused state */
+input:focus {
+  border-bottom: 2px solid #2196f3; /* Focused border color */
+}
+
+/* Error state */
+input.error {
+  border-bottom: 2px solid #FA5252; /* Error border color */
+}

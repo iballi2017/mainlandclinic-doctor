@@ -1,0 +1,80 @@
+@use "../_partials/mixins";
+
+.pill {
+  border-radius: 100vmax;
+}
+
+.after-pseudo-icon {
+  display: flex;
+
+  &.caret-down {
+    &::after {
+      @include mixins.after("\f0d7", inherit);
+      margin-left: 1em;
+      color: var(--clr-bright);
+    }
+  }
+}
+
+/* Animation Classes*/
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 1000ms ease-in-out;
+  &.appear {
+    opacity: 1;
+  }
+}
+.from-left,
+.from-right,
+.from-bottom {
+  transition: transform 1000ms ease-in-out;
+  position: absolute;
+  opacity: 0;
+  &.appear {
+    position: relative;
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.from-left {
+  transform: translateX(-5em);
+}
+.from-right {
+  transform: translateX(5em);
+}
+
+.from-top {
+  transform: translateY(-50%);
+}
+
+.from-bottom {
+  transform: translateY(50%);
+}
+
+.payment-card-logos {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--clr-light-300);
+  border-radius: 3px;
+  padding: 0.5em 1em;
+  li {
+    max-width: 50px;
+  }
+}
+
+.cursor-default{
+  cursor: default;
+}
+
+// .tick-circle{
+//   background-color: red;
+//   position: relative;
+
+//   svg{
+//     position: absolute;
+//     right: 0;
+//     background-color: blue;
+//   }
+// }
