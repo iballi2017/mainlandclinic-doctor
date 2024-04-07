@@ -16,7 +16,7 @@ $error = true;
                         <h2 class="uppercase font-bold text-3xl">Sign Up</h2>
                         <p class="max-w-60 text-center">If you dont have a personal account please sign up</p>
                         <div class="my-2"></div>
-                        <a href="./register.php" class="inline-flex items-center justify-center w-full max-w-40 mx-auto border border-white rounded-sm py-2 px-8 text-sm hover:bg-white hover:text-gray-700">Register</a>
+                        <a href="./register.php" class="inline-flex items-center justify-center w-full max-w-40 mx-auto border border-white rounded-md py-2 px-8 text-sm hover:bg-white hover:text-gray-700">Register</a>
                     </div>
                 </div>
                 <div class="col-span-2 sm:col-span-1 p-6">
