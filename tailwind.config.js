@@ -3,7 +3,10 @@ module.exports = {
   content: ["./src/**/*.{html,js,php}",
     "./node_modules/flowbite/**/*.js"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        display: '"Poppins", sans-serif', // Adds a new `font-display` class
+      }},
     colors: {
       'primary': {
         '500': 'hsl(108, 93%, 29%)',
@@ -16,6 +19,7 @@ module.exports = {
         '400': 'hsl(0, 0%, 95%)',//#F3F3F3;
         '500': 'hsl(216, 42%, 95%)', //#eef2f8;
         '600': 'hsl(0, 0%, 85%)',//#D9D9D9;
+        '650': '#c3c3c3',//#c3c3c3;
         '700': '#c4c4c4',//#c4c4c4;
         '750': '#828282', //#828282;
       },

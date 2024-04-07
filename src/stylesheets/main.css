@@ -102,7 +102,7 @@ html {
 }
 
 .bg-dark-room-surgeon {
-  background-image: url(../assets/images/dark-room-surgeon.png);
+  background-image: url(../assets/images/dark-room-hospital.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -144,6 +144,7 @@ html {
   --ff-primary: "Open Sans", sans-serif;
   --ff-secondary: "Poppins", sans-serif;
   --ff-body: var(--ff-primary);
+  --ff-heading: var(--ff-secondary);
   /* FONT SIZES */
   --fs-50: 0.81rem; /*13px*/
   --fs-100: 0.88rem; /*14px*/

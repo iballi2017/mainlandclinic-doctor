@@ -1,62 +1,134 @@
+<!-- top-bar -->
+<?php include_once(__DIR__ . "./components/top-bar.php"); ?>
 <!-- header -->
-<?php include_once("./components/header.php"); ?>
-<?php
-
-$error = true;
-
-?>
+<?php include_once(__DIR__ . "./components/header.php"); ?>
+<!-- main-toolbar -->
+<?php include_once(__DIR__ . "./components/main-toolbar.php"); ?>
 
 
-<div class="mx-auto min-h-screen flex items-center justify-center">
-    <div class="mx-auto w-full max-w-7xl px-2 sm:px-6 lg:px-8">
-        <div class="block mx-auto w-full bg-white border border-gray-200 rounded-lg overflow-hidden shadow dark:bg-gray-800 dark:border-gray-700">
-            <div class="grid grid-cols-2">
-                <div class="hidden sm:block col-span-2 sm:col-span-1 bg-dark-room-surgeon text-white">
-                    <div class="h-full flex flex-col items-center justify-center">
-                        <h2 class="uppercase font-bold text-3xl">Sign In</h2>
-                        <p class="max-w-60 text-center">If you have a personal account, please sign in</p>
-                        <div class="my-2"></div>
-                        <a href="./auth.php" class="inline-flex items-center justify-center w-full max-w-40 mx-auto border border-white rounded-md py-2 px-8 text-sm hover:bg-white hover:text-gray-700">Login</a>
+<div class="mx-auto min-h-screen flex items-center justify-center mt-10 mb-32">
+    <div class="mx-auto w-full max-w-4xl px-2 sm:px-6 lg:px-8">
+        <div class="block p-6 mx-auto bg-white border border-gray-200 rounded-lg overflow-hidden shadow dark:bg-gray-800 dark:border-gray-700">
+
+            <h1 class="text-center font-bold text-2xl text-secondary-500 uppercase font-display">Sign Up</h1>
+
+            <div class="my-8"></div>
+            <form class="" autocomplete="off">
+                <fieldset>
+                    <legend class="block w-full border-b-2 font-semibold text-lg mb-4">Personal Information</legend>
+                    <div class="grid grid-cols-12 gap-4">
+                        <div class="col-span-12">
+                            <label for="full_name" class="cursor-pointer block mb-2 text-sm font-medium text-gray-900 dark:text-white">Full Name</label>
+                            <input type="text" id="full_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required />
+                        </div>
+                        <div class="col-span-12 sm:col-span-6">
+                            <label for="email" class="cursor-pointer block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email Address</label>
+                            <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required />
+                        </div>
+                        <div class="col-span-12 sm:col-span-6">
+                            <label for="phone" class="cursor-pointer block mb-2 text-sm font-medium text-gray-900 dark:text-white">Phone Number</label>
+                            <input type="tel" id="phone" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required />
+                        </div>
+                        <div class="col-span-6 sm:col-span-3">
+                            <label for="age" class="cursor-pointer block mb-2 text-sm font-medium text-gray-900 dark:text-white">Age</label>
+                            <input type="number" id="age" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required />
+                        </div>
+                        <div class="col-span-6 sm:col-span-3">
+                            <label for="sex" class="cursor-pointer block mb-2 text-sm font-medium text-gray-900 dark:text-white">Sex</label>
+                            <select id="sex" class="cursor-pointer bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                                <option va;ue="male" selected>Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="col-span-6 sm:col-span-3">
+                            <label for="regligion" class="cursor-pointer block mb-2 text-sm font-medium text-gray-900 dark:text-white">Religion</label>
+                            <select id="regligion" class="cursor-pointer bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                                <option va;ue="christianity" selected>Christianity</option>
+                                <option value="islam">Islam</option>
+                                <option value="traditionalist">Traditionalist</option>
+                                <option value="atheist">Atheist</option>
+                            </select>
+                        </div>
+                        <div class="col-span-6 sm:col-span-3">
+                            <label for="marital_status" class="cursor-pointer block mb-2 text-sm font-medium text-gray-900 dark:text-white">Marital Status</label>
+                            <select id="marital_status" class="cursor-pointer bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                                <option value="single" selected>Single</option>
+                                <option value="married">Married</option>
+                                <option value=" divorced">Divorced</option>
+                                <option value="widowed">Widowed</option>
+                            </select>
+                        </div>
                     </div>
-                </div>
-                <div class="col-span-2 sm:col-span-1 p-6">
-                    <h1 class="text-center font-bold text-2xl text-secondary-500">Create an Account</h1>
-                    <p class="text-center text-accent-750">Use valid details</p>
+                </fieldset>
+                <div class="my-8"></div>
+                <fieldset>
+                    <legend class="block w-full border-b-2 font-semibold text-lg mb-4">Address</legend>
+                    <div class="grid grid-cols-12 gap-4">
+                        <div class="col-span-12">
+                            <label for="address" class="cursor-pointer block mb-2 text-sm font-medium text-gray-900 dark:text-white">Address</label>
+                            <input type="text" id="address" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required />
+                        </div>
+                        <div class="col-span-12 sm:col-span-6">
+                            <label for="city" class="cursor-pointer block mb-2 text-sm font-medium text-gray-900 dark:text-white">Town/City</label>
+                            <input type="text" id="city" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required />
+                        </div>
+                        <div class="col-span-6 sm:col-span-3">
+                            <label for="state" class="cursor-pointer block mb-2 text-sm font-medium text-gray-900 dark:text-white">State</label>
+                            <select id="state" class="cursor-pointer bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                                <option value="" selected>....</option>
+                            </select>
+                        </div>
+                        <div class="col-span-6 sm:col-span-3">
+                            <label for="zipcode" class="cursor-pointer block mb-2 text-sm font-medium text-gray-900 dark:text-white">Zip</label>
+                            <input type="text" id="zipcode" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required />
+                        </div>
+                    </div>
 
-                    <div class="my-4"></div>
-                    <form class="max-w-sm mx-auto">
-                        <div class="mb-5">
-                            <label for="full_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Full Name</label>
-                            <input type="text" id="full_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="name@flowbite.com" required />
+                </fieldset>
+                <div class="my-8"></div>
+                <fieldset>
+                    <legend class="block w-full border-b-2 font-semibold text-lg mb-4">Referrer</legend>
+                    <div class="grid grid-cols-12 gap-4">
+                        <div class="col-span-12 sm:col-span-6">
+                            <label for="informant" class="cursor-pointer block mb-2 text-sm font-medium text-gray-900 dark:text-white">Informant</label>
+                            <select id="informant" class="cursor-pointer bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                                <option value="single" selected>Toddler</option>
+                                <option value="married">Aged</option>
+                                <option value=" divorced">Non-english Speaker</option>
+                            </select>
                         </div>
-                        <div class="mb-5">
-                            <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email Address</label>
-                            <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="name@flowbite.com" required />
+                        <div class="col-span-12 sm:col-span-6">
+                            <label for="relationship" class="cursor-pointer block mb-2 text-sm font-medium text-gray-900 dark:text-white">Relationship</label>
+                            <input type="text" id="relationship" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required />
                         </div>
-                        <div class="mb-5">
-                            <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
+                    </div>
+                </fieldset>
+                <div class="my-8"></div>
+                <fieldset>
+                    <legend class="block w-full border-b-2 font-semibold text-lg mb-4">Create Password</legend>
+                    <div class="grid grid-cols-12 gap-4">
+                        <div class="col-span-12 sm:col-span-6">
+                            <label for="password" class="cursor-pointer block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
                             <input type="password" id="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required />
                         </div>
-                        <div class="mb-5">
-                            <label for="confirm_password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Confirm Password</label>
-                            <input type="confirm_password" id="confirm_password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required />
+                        <div class="col-span-12 sm:col-span-6">
+                            <label for="confirm_password" class="cursor-pointer block mb-2 text-sm font-medium text-gray-900 dark:text-white">Confirm Password</label>
+                            <input type="password" id="confirm_password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required />
                         </div>
+                    </div>
+                </fieldset>
+                <div class="my-8"></div>
+                <button type="submit" class="text-white bg-primary-500 hover:bg-primary-600 focus:ring-1 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm w-full sm:w-auto inline-block px-5 sm:px-8 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Register</button>
 
-
-                        <div class="flex items-start mb-5">
-                            <div class="flex items-center h-5">
-                                <input id="remember" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-primary-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required />
-                            </div>
-                            <label for="remember" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Remember me</label>
-                        </div>
-                        <button type="submit" class="text-white bg-primary-500 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Register</button>
-                    </form>
-
-                </div>
-            </div>
+            </form>
         </div>
+        <div class="my-4"></div>
+        <p>
+            Already have an account? <a href="./auth.php" class="text-primary-500 font-semibold">Login</a>
+        </p>
     </div>
 </div>
 
 <!-- footer -->
-<?php include_once("./components/footer.php"); ?>
+<?php include_once(__DIR__ . "./components/footer.php"); ?>
