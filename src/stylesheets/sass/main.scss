@@ -19,3 +19,14 @@ input:focus {
 input.error {
   border-bottom: 2px solid #FA5252; /* Error border color */
 }
+
+
+[type='checkbox'], [type='radio']{
+  &:focus, &:checked {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    --tw-ring-color: var(--clr-primary-500);
+    color: var(--clr-primary-500);
+  }
+  
+}
