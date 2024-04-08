@@ -8,7 +8,7 @@ $error = true;
 
 
 <div class="mx-auto min-h-screen flex items-center justify-center">
-    <div class="mx-auto w-full max-w-7xl px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto w-full max-w-5xl px-2 sm:px-6 lg:px-8">
         <div class="block mx-auto w-full bg-white border border-gray-200 rounded-lg overflow-hidden shadow dark:bg-gray-800 dark:border-gray-700">
             <div class="grid grid-cols-2">
                 <div class="hidden sm:block col-span-2 sm:col-span-1 bg-dark-room-surgeon text-white">
@@ -39,11 +39,11 @@ $error = true;
 
 
                         <!-- Error field sample -->
-                        <div class="my-8 bg-gray-200 p-2 rounded-lg">
+                        <!-- <div class="my-8 bg-gray-200 p-2 rounded-lg">
                             <label for="username-error" class="block mb-2 text-sm font-medium text-red-700 dark:text-red-500">Error field</label>
                             <input type="text" id="username-error" class="bg-red-50 border border-red-500 text-red-900 placeholder-red-700 text-sm rounded-lg focus:ring-red-500 dark:bg-gray-700 focus:border-red-500 block w-full p-2.5 dark:text-red-500 dark:placeholder-red-500 dark:border-red-500" placeholder="Bonnie Green">
                             <p class="mt-2 text-sm text-red-600 dark:text-red-500"><span class="font-medium">Oops!</span> Username already taken!</p>
-                        </div>
+                        </div> -->
                         <!--  -->
 
 
