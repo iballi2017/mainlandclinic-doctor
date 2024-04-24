@@ -112,6 +112,7 @@ html {
   /* COLORS */
   --clr-primary-500: hsl(108, 93%, 29%);
   --clr-primary-600: hsl(97, 58%, 24%);
+  --clr-primary-650: hsl(113, 32%, 10%);
   --clr-primary-700: hsl(0, 0%, 36%);
   --clr-accent-50: #c3c3c3;
   --clr-accent-300: hsl(214, 37%, 96%);
