@@ -1,0 +1,1 @@
+<main class="p-4 bg-neutral-600">

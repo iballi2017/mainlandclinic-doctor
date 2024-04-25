@@ -1,6 +1,6 @@
 <aside id="default-sidebar" class="fixed top-0 left-0 z-40 w-full lg:w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
     <div class="h-full py-4 overflow-y-auto bg-primary-650">
-        <ul class="space-y-2 font-medium">
+        <ul class="space-y-2 font-medium text-sm">
             <li>
                 <div class="px-3 py-2">
                     <div class="max-w-24">
@@ -18,7 +18,7 @@
                 <a href="user-appointments.php" class="hover-line-after flex items-center px-3 py-2 text-accent-50 rounded dark:text-white hover:bg-primary-630 dark:hover:bg-gray-700 group">
                     <i class="far fa-calendar-check"></i>
                     <span class="flex-1 ms-3 whitespace-nowrap">Appointments</span>
-                    <span class="inline-flex items-center justify-center px-2 ms-3 text-sm font-medium text-gray-800 bg-gray-100 rounded-full dark:bg-gray-700 dark:text-gray-300">23</span>
+                    <span class="inline-flex items-center justify-center px-2 ms-3 text-xs font-medium text-gray-800 bg-gray-100 rounded-full dark:bg-gray-700 dark:text-gray-300">23</span>
                 </a>
             </li>
             <li>
@@ -31,7 +31,7 @@
                 <a href="user-notification.php" class="hover-line-after flex items-center px-3 py-2 text-accent-50 rounded dark:text-white hover:bg-primary-630 dark:hover:bg-gray-700 group">
                     <i class="far fa-bell"></i>
                     <span class="flex-1 ms-3 whitespace-nowrap">Notification</span>
-                    <span class="inline-flex items-center justify-center w-3 h-3 p-3 ms-3 text-sm font-medium text-blue-800 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300">3</span>
+                    <span class="inline-flex items-center justify-center w-3 h-3 p-3 ms-3 text-xs font-medium text-blue-800 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300">3</span>
                 </a>
             </li>
             <li>
