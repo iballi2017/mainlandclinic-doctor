@@ -6,11 +6,14 @@ module.exports = {
     extend: {
       fontFamily: {
         display: '"Poppins", sans-serif', // Adds a new `font-display` class
-      }},
+      }
+    },
     colors: {
       'primary': {
+        '400': 'hsl(152, 100%, 33%)', //#00A759;
         '500': 'hsl(108, 93%, 29%)',
         '600': 'hsl(97, 58%, 24%)',
+        '630': "#313826", //#313826;
         '650': '#132111',
         '700': 'hsl(0, 0%, 36%)',
       },
@@ -33,6 +36,13 @@ module.exports = {
       'alt': {
         '100': 'hsl(277, 93%, 29%)', //#59058D;
         '200': ' hsl(223, 70%, 63%)', //#5F84E3;
+      },
+      'neutral': {
+        '500': '#ffffff', //#ffffff;
+        '600': '#FAFAFA', //#FAFAFA;
+      },
+      'dark':{
+        '700': '#333333', //#333333;
       }
 
 

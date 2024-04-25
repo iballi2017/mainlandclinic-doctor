@@ -64,7 +64,7 @@
   }
 }
 
-.cursor-default{
+.cursor-default {
   cursor: default;
 }
 
@@ -78,3 +78,52 @@
 //     background-color: blue;
 //   }
 // }
+
+.hover-line-after {
+  overflow: hidden;
+  position: relative;
+  &:hover {
+    &::after {
+      content: "";
+      display: block;
+      width: 3px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      background-color: var(--clr-primary-500);
+      margin-left: 0.5em;
+    }
+  }
+}
+
+.line-top-after {
+  overflow: hidden;
+  position: relative;
+  &::after {
+    content: "";
+    display: block;
+    height: 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: var(--clr-primary-400);
+  }
+}
+
+.user-avatar-tag {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 5px;
+  &::before {
+    content: "";
+    display: block;
+    height: 20px;
+    width: 20px;
+    background-image: url(../assets/icons/account_circle_black.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}

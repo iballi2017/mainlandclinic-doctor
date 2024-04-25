@@ -1,7 +1,9 @@
 :root {
   /* COLORS */
+  --clr-primary-400: hsl(152, 100%, 33%); //#00A759;
   --clr-primary-500: hsl(108, 93%, 29%); //#208d05;
   --clr-primary-600: hsl(97, 58%, 24%); //#345F19;
+  --clr-primary-630: #313826; //#313826;
   --clr-primary-650: hsl(113, 32%, 10%); //#132111;
   --clr-primary-700: hsl(0, 0%, 36%); //#5b5b5b;
 
@@ -13,7 +15,12 @@
   --clr-accent-700: #c4c4c4; //#C4C4C4;
   --clr-accent-750: #828282; //#828282;
 
+
+  --clr-dark-700: #333333; //#333333;
+
   --clr-neutral-500: #ffffff;
+  --clr-neutral-600: #FAFAFA; //#FAFAFA;
+
   --clr-secondary-500: hsl(114, 28%, 14%); //#1b2c19;
 
   --clr-alt-100: hsl(277, 93%, 29%); //#59058D;
