@@ -9,7 +9,7 @@
     <div class="lg:ml-64">
 
         <!-- main toolbar -->
-        <?php $pageTitle = "Appointments";
+        <?php $pageTitle = "Patient's Report History";
         include(__DIR__ . "./components/main-toolbar.php"); ?>
         <!-- open main area -->
         <?php include_once(__DIR__ . "./components/open-main-area.php"); ?>
@@ -57,11 +57,11 @@
                             <tbody>
                                 <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                                     <th scope="row" class="px-4 py-2 sm:px-6 sm:py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                        <a href="user-appointment-details.php?id=123&details=1&chat=0" class="font-semibold">11233645BS</a>
+                                        <a href="report-details.php" class="font-semibold">11233645BS</a>
                                     </th>
                                     <td class="px-4 py-2 sm:px-6 sm:py-4">
                                         <div class="user-avatar-tag whitespace-nowrap">
-                                            <a href="user-appointment-details.php?id=123&details=1&chat=0" class="font-semibold">Bumi Salako</a>
+                                            <a href="report-details.php" class="font-semibold">Bumi Salako</a>
                                         </div>
                                     </td>
                                     <td class="px-4 py-2 sm:px-6 sm:py-4">
