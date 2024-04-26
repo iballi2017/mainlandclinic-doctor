@@ -47,16 +47,10 @@
                                         Service
                                     </th>
                                     <th scope="col" class="px-6 py-3">
-                                        Price
-                                    </th>
-                                    <th scope="col" class="px-6 py-3">
                                         Time
                                     </th>
                                     <th scope="col" class="px-6 py-3">
                                         Date
-                                    </th>
-                                    <th scope="col" class="px-6 py-3">
-                                        Status
                                     </th>
                                 </tr>
                             </thead>
@@ -74,18 +68,10 @@
                                         Telemedicine
                                     </td>
                                     <td class="px-4 py-2 sm:px-6 sm:py-4">
-                                        ₦15,000
-                                    </td>
-                                    <td class="px-4 py-2 sm:px-6 sm:py-4">
                                         07:00am
                                     </td>
                                     <td class="px-4 py-2 sm:px-6 sm:py-4">
                                         23/11/2024
-                                    </td>
-                                    <td class="px-4 py-2 sm:px-6 sm:py-4">
-                                        <span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Started</span>
-                                        <span class="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">Completed</span>
-                                        <span class="bg-gray-100 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">Cancelled</span>
                                     </td>
                                 </tr>
                             </tbody>
