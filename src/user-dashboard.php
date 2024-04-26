@@ -15,7 +15,7 @@
         <!-- open main area -->
         <?php include_once(__DIR__ . "./components/open-main-area.php"); ?>
         <!-- <main class="p-4 bg-neutral-600"> -->
-        <ul class="grid grid-cols-12 items-stretch gap-4">
+        <ul class="grid grid-cols-12 items-stretch gap-2 sm:gap-4">
             <li class="col-span-6 sm:col-span-3">
                 <div class="line-top-after p-6 h-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <h5 class="text-base font-semibold">Total Appointment</h5>
