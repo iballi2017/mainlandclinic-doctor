@@ -3,7 +3,7 @@
 
 <div class="min-h-screen">
     <!-- Sidenav -->
-    <?php include_once(__DIR__ . "./components/user-account-side-navigation.php"); ?>
+    <?php include_once(__DIR__ . "./components/doctor-account-side-navigation.php"); ?>
 
 
     <div class="lg:ml-64">
@@ -33,7 +33,7 @@
             </section>
             <div class="px-4 py-2 sm:px-6">
                 <div class="rounded-md overflow-hidden border border-gray-200">
-                    <div class="relative overflow-x-auto">
+                    <div class="relative overflow-x-auto remove-scrollbar">
                         <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
                             <thead class="text-xs text-gray-700 uppercase bg-accent-600 dark:bg-gray-700 dark:text-gray-400">
                                 <tr>

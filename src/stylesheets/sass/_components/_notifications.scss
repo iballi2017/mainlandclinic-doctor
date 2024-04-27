@@ -1,0 +1,10 @@
+.notifications {
+  display: flex;
+  flex-direction: column;
+  .item {
+    padding: .9em 0;
+    &:not(&:last-child) {
+      border-bottom: 1px solid var(--clr-accent-600);
+    }
+  }
+}

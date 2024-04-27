@@ -3,7 +3,7 @@
 
 <div class="min-h-screen">
     <!-- Sidenav -->
-    <?php include_once(__DIR__ . "./components/user-account-side-navigation.php"); ?>
+    <?php include_once(__DIR__ . "./components/doctor-account-side-navigation.php"); ?>
 
 
     <div class="lg:ml-64">
@@ -217,12 +217,12 @@
                                 <div class="text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700">
                                     <ul class="flex flex-wrap -mb-px">
                                         <li class="me-2">
-                                            <a href="user-appointment-details.php?id=123&details=1&chat=0&medical-history=1&medical-lab=0" class="inline-block p-4 font-semibold text-primary-500 border-b-2 border-primary-500 rounded-t-lg active dark:text-primary-400 dark:border-primary-400" aria-current="page">
+                                            <a href="doctor-appointment-details.php?id=123&details=1&chat=0&medical-history=1&medical-lab=0" class="inline-block p-4 font-semibold text-primary-500 border-b-2 border-primary-500 rounded-t-lg active dark:text-primary-400 dark:border-primary-400" aria-current="page">
                                                 Medical History
                                             </a>
                                         </li>
                                         <li class="me-2">
-                                            <a href="user-appointment-details.php?id=123&details=1&chat=0&medical-history=0&medical-lab=1" class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300">
+                                            <a href="doctor-appointment-details.php?id=123&details=1&chat=0&medical-history=0&medical-lab=1" class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300">
                                                 Medical Lab
                                             </a>
                                         </li>
