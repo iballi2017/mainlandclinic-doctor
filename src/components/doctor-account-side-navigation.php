@@ -36,14 +36,14 @@
                 </a>
             </li>
             <li>
-                <a href="doctor-notification.php" class="hover-line-after flex items-center px-3 py-2 text-accent-50 rounded dark:text-white hover:bg-primary-630 dark:hover:bg-gray-700 group">
+                <a href="doctor-notifications.php" class="hover-line-after flex items-center px-3 py-2 text-accent-50 rounded dark:text-white hover:bg-primary-630 dark:hover:bg-gray-700 group">
                     <i class="far fa-bell"></i>
-                    <span class="flex-1 ms-3 whitespace-nowrap">Notification</span>
+                    <span class="flex-1 ms-3 whitespace-nowrap">Notifications</span>
                     <span class="inline-flex items-center justify-center w-3 h-3 p-3 ms-3 text-xs font-medium text-blue-800 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300">3</span>
                 </a>
             </li>
             <li>
-                <a href="doctor-settings.php" class="hover-line-after flex items-center px-3 py-2 text-accent-50 rounded dark:text-white hover:bg-primary-630 dark:hover:bg-gray-700 group">
+                <a href="doctor-account-settings.php" class="hover-line-after flex items-center px-3 py-2 text-accent-50 rounded dark:text-white hover:bg-primary-630 dark:hover:bg-gray-700 group">
                     <i class="fas fa-cog"></i>
                     <span class="flex-1 ms-3 whitespace-nowrap">Settings</span>
                 </a>

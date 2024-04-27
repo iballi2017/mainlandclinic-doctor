@@ -27,25 +27,45 @@
                         <div class="text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700">
                             <ul class="flex flex-wrap -mb-px">
                                 <li class="me-2">
-                                    <a href="#" class="inline-block p-4 font-semibold text-primary-500 border-b-2 border-primary-500 rounded-t-lg active dark:text-primary-400 dark:border-primary-400" aria-current="page">Details</a>
+                                    <a href="doctor-appointment-details.php?id=123&details=1&chat=0" class="inline-block p-4 font-semibold text-primary-500 border-b-2 border-primary-500 rounded-t-lg active dark:text-primary-400 dark:border-primary-400" aria-current="page">Details</a>
                                 </li>
                                 <li class="me-2">
-                                    <a href="#" class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300">Chat</a>
-                                </li>
-                                <li>
-                                    <a class="inline-block p-4 text-gray-400 rounded-t-lg cursor-not-allowed dark:text-gray-500">Disabled</a>
+                                    <a href="doctor-appointment-details.php?id=123&details=0&chat=1" class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300">Chat</a>
                                 </li>
                             </ul>
                         </div>
 
-
                         <div class="my-4"></div>
-                        <!-- content -->
-                        <div>
-                            <!-- appointment details -->
-                            <div class="px-4 py-2 sm:py-4 bg-white border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700">
-                                <h3 class="pb-4 font-semibold border-b">Patient's Information</h3>
 
+                        <!-- CONTENT -->
+
+
+                        <!-- Messenger -->
+
+                        <div class="bg-white border border-gray-200 rounded-lg overflow-hidden dark:bg-gray-800 dark:border-gray-700">
+
+                            <div class="p-4">
+                            Typing...
+                            </div>
+                            <div class="p-4 bg-white border-t border-gray-200 rounded-b-lg dark:bg-gray-800 dark:border-gray-700">
+                               
+
+
+                                <div class="relative">
+                                    <button class="absolute inset-y-0 end-0 flex items-center pe-3.5">
+                                        <img src="./assets/icons/paper-plane-blue.svg" alt="">
+                                    </button>
+                                    <input type="text" id="input-group-1" class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full pe-10 p-2  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-primary-500" placeholder="Search">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- appointment details -->
+                        <div class="hidden">
+                            <div class="px-4 py-2 sm:py-4 bg-white border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700">
+
+                                <h3 class="pb-4 font-semibold border-b">Patient's Information</h3>
                                 <div class="grid grid-cols-12 py-4 gap-4 items-center text-sm">
                                     <div class="transition-spacing delay-500 duration-300 ease-in-out" x-bind:class="! isOpenInfo ? 'col-span-4 lg:col-span-1' : 'lg:col-span-2'">
                                         <span>
@@ -164,6 +184,7 @@
                     </div>
                 </div>
             </div>
+            <!--  -->
             <div class="col-span-12 sm:col-span-5" x-show="isOpenInfo">
                 <div class="h-full overflow-hidden bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
 
@@ -178,7 +199,7 @@
                                         <path d="M6.40002 18.6538L5.34619 17.6L10.9462 12L5.34619 6.40002L6.40002 5.34619L12 10.9462L17.6 5.34619L18.6538 6.40002L13.0538 12L18.6538 17.6L17.6 18.6538L12 13.0538L6.40002 18.6538Z" fill="black" />
                                     </svg>
                                 </button>
-                                Customers Information
+                                Patient's Information
                             </h3>
 
                             <div class="grid grid-cols-12 py-4 gap-4 items-center text-sm">
