@@ -1,0 +1,54 @@
+@use "../_partials/mixins";
+
+.chat-screen {
+  // display: flex;
+
+  .streams {
+    .event {
+      &[data-type="host"] {
+        text-align: right;
+        .body {
+          text-align: left;
+        }
+      }
+      &[data-type="client"] {
+        .content {
+          .inner {
+            background-color: var(--clr-accent-600);
+          }
+        }
+        @include mixins.minmq(50em) {
+          .content {
+            margin-left: 50px;
+          }
+        }
+      }
+      .content {
+        .inner {
+          background-color: var(--clr-accent-400);
+        }
+        @include mixins.minmq(50em) {
+          display: flex;
+          gap: 10px;
+          &::before {
+            content: "";
+            display: block;
+            height: 40px;
+            width: 40px;
+            min-height: 40px;
+            min-width: 40px;
+            background-image: url(../assets/icons/account_circle_black.svg);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-left: -60px;
+
+            //   @include mixins.maxmq(50em) {
+            //     // display: none;
+            //   }
+          }
+        }
+      }
+    }
+  }
+}

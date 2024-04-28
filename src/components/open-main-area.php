@@ -1,1 +1,1 @@
-<main class="p-4 bg-neutral-600">
+<main class="px-2 py-4 sm:px-4 bg-neutral-600">
