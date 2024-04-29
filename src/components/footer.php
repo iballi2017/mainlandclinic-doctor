@@ -1,3 +1,8 @@
+<div class="page-loader show">
+    <div class="loader"></div>
+</div>
+
+
 <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
