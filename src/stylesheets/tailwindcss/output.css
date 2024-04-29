@@ -2498,6 +2498,11 @@ input:checked + .toggle-bg {
   border-color: rgb(240 82 82 / var(--tw-border-opacity));
 }
 
+.focus\:border-secondary-500:focus {
+  --tw-border-opacity: 1;
+  border-color: hsl(114 28% 14% / var(--tw-border-opacity));
+}
+
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -2563,6 +2568,11 @@ input:checked + .toggle-bg {
 .focus\:ring-white:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(255 255 255 / var(--tw-ring-opacity));
+}
+
+.focus\:ring-secondary-500:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: hsl(114 28% 14% / var(--tw-ring-opacity));
 }
 
 .focus\:ring-offset-2:focus {
@@ -2837,6 +2847,11 @@ input:checked + .toggle-bg {
   border-color: hsl(108 93% 29% / var(--tw-border-opacity));
 }
 
+.dark\:focus\:border-secondary-500:focus:is(.dark *) {
+  --tw-border-opacity: 1;
+  border-color: hsl(114 28% 14% / var(--tw-border-opacity));
+}
+
 .dark\:focus\:ring-gray-600:focus:is(.dark *) {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(75 85 99 / var(--tw-ring-opacity));
@@ -2959,6 +2974,10 @@ input:checked + .toggle-bg {
 
   .sm\:gap-4 {
     gap: 1rem;
+  }
+
+  .sm\:rounded-lg {
+    border-radius: 0.5rem;
   }
 
   .sm\:p-4 {
