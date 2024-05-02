@@ -1,6 +1,51 @@
 <!-- header -->
 <?php include_once(__DIR__ . "./components/header.php"); ?>
 
+
+<?php
+
+// class Params
+// {
+//     // Properties (attributes)
+//     public $isShowMoreInfo = false;
+//     public $isMedicalHistory = false;
+
+//     public function __construct()
+//     {
+//     }
+
+//     public function displayMoreInfo($isShowMoreInfo)
+//     {
+//         $this->isShowMoreInfo = $isShowMoreInfo;
+//         return  $this->isShowMoreInfo;
+//     }
+
+//     public function displayMedicalHistory($isMedicalHistory)
+//     {
+//         $this->isMedicalHistory = $isMedicalHistory;
+//         return  $this->isMedicalHistory;
+//     }
+// }
+
+
+// $state = new Params();
+
+$appointmentId;
+$isShowMoreInfo;
+$isMedicalHistory;
+
+if (isset($_GET["id"])) {
+    $appointmentId = $_GET["id"];
+}
+if (isset($_GET["isShowMoreInfo"])) {
+    $isShowMoreInfo = $_GET["isShowMoreInfo"];
+}
+if (isset($_GET["isMedicalHistory"])) {
+    $isMedicalHistory = $_GET["isMedicalHistory"];
+}
+
+?>
+
 <div class="min-h-screen">
     <!-- Sidenav -->
     <?php include_once(__DIR__ . "./components/doctor-account-side-navigation.php"); ?>
@@ -14,8 +59,20 @@
         <!-- open main area -->
         <?php include_once(__DIR__ . "./components/open-main-area.php"); ?>
 
-        <div class="grid grid-cols-12 gap-2" x-data="{ isOpenInfo: false }">
-            <div x-bind:class="! isOpenInfo ? 'col-span-12' : 'hidden sm:block col-span-7'">
+        <!-- <div class="grid grid-cols-12 gap-2" x-data="{ isOpenInfo: false }"> -->
+        <div class="grid grid-cols-12 gap-2">
+            <!-- <div x-bind:class="! isOpenInfo ? 'col-span-12' : 'hidden sm:block col-span-7'"> -->
+            <div class="
+            <?php
+            if (!$isShowMoreInfo) {
+                echo "col-span-12";
+            } else {
+                echo "hidden sm:block col-span-7";
+            }
+            ?>
+            
+            ">
+                <!-- $state->isShowMoreInfo -->
                 <div class="h-full overflow-hidden bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <div class="flex items-center gap-2 px-2 py-4 sm:px-6 bg-accent-600 font-semibold">
                         <button class="back-history-btn">
@@ -42,7 +99,15 @@
 
                                 <h3 class="pb-4 font-semibold border-b">Patient's Information</h3>
                                 <div class="grid grid-cols-12 py-4 gap-4 items-center text-sm">
-                                    <div class="transition-spacing delay-500 duration-300 ease-in-out" x-bind:class="! isOpenInfo ? 'col-span-4 lg:col-span-1' : 'lg:col-span-2'">
+                                    <div class="
+                                    <?php
+                                    if (!$isShowMoreInfo) {
+                                        echo "col-span-4 lg:col-span-1";
+                                    } else {
+                                        echo "lg:col-span-2 ";
+                                    }
+                                    ?>
+                                    transition-spacing delay-500 duration-300 ease-in-out">
                                         <span>
                                             <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M35 0C15.68 0 0 15.68 0 35C0 54.32 15.68 70 35 70C54.32 70 70 54.32 70 35C70 15.68 54.32 0 35 0ZM35 14C41.755 14 47.25 19.495 47.25 26.25C47.25 33.005 41.755 38.5 35 38.5C28.245 38.5 22.75 33.005 22.75 26.25C22.75 19.495 28.245 14 35 14ZM35 63C27.895 63 19.495 60.13 13.51 52.92C19.425 48.3 26.88 45.5 35 45.5C43.12 45.5 50.575 48.3 56.49 52.92C50.505 60.13 42.105 63 35 63Z" fill="#C4C4C4" />
@@ -50,25 +115,71 @@
 
                                         </span>
                                     </div>
-                                    <div class="transition-spacing delay-500 duration-300 ease-in-out" x-bind:class="! isOpenInfo ? 'col-span-8 lg:col-span-2' : 'lg:col-span-5'">
+                                    <div class="
+                                    <?php
+                                    if (!$isShowMoreInfo) {
+                                        echo "col-span-8 lg:col-span-2";
+                                    } else {
+                                        echo "lg:col-span-5 ";
+                                    }
+                                    ?>
+                                    
+                                    transition-spacing delay-500 duration-300 ease-in-out">
                                         <h6 class="font-semibold">Name</h6>
                                         <p>Bumi Salako</p>
                                     </div>
-                                    <div class="transition-spacing delay-500 duration-300 ease-in-out" x-bind:class="! isOpenInfo ? 'col-span-6 lg:col-span-2' : 'lg:col-span-5'">
+                                    <div class="
+                                    <?php
+                                    if (!$isShowMoreInfo) {
+                                        echo "col-span-6 lg:col-span-2";
+                                    } else {
+                                        echo "lg:col-span-5 ";
+                                    }
+                                    ?>
+                                    transition-spacing delay-500 duration-300 ease-in-out">
                                         <h6 class="font-semibold">ID Number</h6>
                                         <p>11233645BS</p>
                                     </div>
-                                    <div class="transition-spacing delay-500 duration-300 ease-in-out" x-bind:class="! isOpenInfo ? 'col-span-6 lg:col-span-2' : 'lg:col-span-4'">
+                                    <div class="
+                                    <?php
+                                    if (!$isShowMoreInfo) {
+                                        echo "col-span-6 lg:col-span-2";
+                                    } else {
+                                        echo "lg:col-span-4 ";
+                                    }
+                                    ?>
+                                    transition-spacing delay-500 duration-300 ease-in-out">
                                         <h6 class="font-semibold">Phone Number</h6>
                                         <p>09074664838</p>
                                     </div>
-                                    <div class="transition-spacing delay-500 duration-300 ease-in-out" x-bind:class="! isOpenInfo ? 'col-span-12 lg:col-span-3' : 'lg:col-span-4'">
+                                    <div class="
+                                    <?php
+                                    if (!$isShowMoreInfo) {
+                                        echo "col-span-12 lg:col-span-3";
+                                    } else {
+                                        echo "lg:col-span-4 ";
+                                    }
+                                    ?>
+                                    transition-spacing delay-500 duration-300 ease-in-out">
                                         <h6 class="font-semibold">Email Address</h6>
                                         <p class="whitespace-normal">BumiSalako0099@ghotmail.com</p>
                                     </div>
-                                    <div class="lg:text-right" x-bind:class="! isOpenInfo ? 'col-span-12 lg:col-span-2' : 'lg:col-span-4'">
+                                    <div class="
+                                    <?php
+                                    if (!$isShowMoreInfo) {
+                                        echo "col-span-12 lg:col-span-2";
+                                    } else {
+                                        echo "lg:col-span-4 ";
+                                    }
+                                    ?>
+                                    lg:text-right">
                                         <!-- <div x-show="isOpenInfo">Content to show on hover</div> -->
-                                        <button @click="isOpenInfo = true" type="button" class="text-primary-500 bg-white border border-primary-500 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">Info</button>
+                                        <!-- <button @click="isOpenInfo = true" type="button" class="text-primary-500 bg-white border border-primary-500 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">
+                                            Info
+                                        </button> -->
+                                        <button onClick="openMoreInfo()" type="button" class="text-primary-500 bg-white border border-primary-500 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">
+                                            Info
+                                        </button>
                                     </div>
                                 </div>
                             </div>
